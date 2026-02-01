@@ -38,3 +38,4 @@ jobs:
           token: ${{ steps.get_token.outputs.token }}
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           pr_number: ${{ github.event.issue.number || github.event.number }}
+          auto_approve: false
