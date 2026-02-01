@@ -33,7 +33,7 @@ jobs:
           token: ${{ steps.get_token.outputs.token }}
 
       - name: Run Cherry-Pick Action
-        uses: longfangsong/cherry-picker@v1.0.0
+        uses: longfangsong/cherry-picker@v0.0.0-debug
         with:
           token: ${{ steps.get_token.outputs.token }}
           gh_token: ${{ secrets.GITHUB_TOKEN }}
