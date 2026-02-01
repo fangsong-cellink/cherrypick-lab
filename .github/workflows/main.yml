@@ -14,7 +14,7 @@ jobs:
   cherry-pick:
     name: Cherry-Pick PR
     # Replace "my-token-bot" with the name of your bot user
-    if: ${{ github.actor != 'my-token-bot' && github.actor != 'github-actions' && ((github.event.issue.pull_request && startsWith(github.event.comment.body, 'cherry-pick to')) || github.event.pull_request.merged) }}
+    if: ${{ github.actor != 'cherry-picker-bot-cellink' && github.actor != 'github-actions' && ((github.event.issue.pull_request && startsWith(github.event.comment.body, 'cherry-pick to')) || github.event.pull_request.merged) }}
     runs-on: ubuntu-latest
     steps:
       - name: Get token
